@@ -85,6 +85,8 @@ class InfoHeaderCell: UICollectionReusableView, UITextFieldDelegate {
         nameTextField.textField.text = data.name
         if data.age != 0 {
             ageTextField.textField.text = "\(data.age)"
+        } else {
+            ageTextField.textField.text = ""
         }
     }
     
